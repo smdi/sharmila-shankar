@@ -4,7 +4,7 @@ from flask import Flask , render_template , redirect ,  url_for , flash , sessio
 app = Flask(__name__)
 
 
-@app.route('/',methods = ['GET'])
+@app.route('/',methods = ['GET','POST'])
 def intro() :
     return render_template('base.html')    
 
