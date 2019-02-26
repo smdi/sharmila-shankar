@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+     Sharmila shankar Icon of crescent        
+    </title>
+    <link rel="shortcut icon" href="static/images/cres.png">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    {% include 'css.html' %}
+    <style>
+
+
+        .navbar-custom {
+               background-color: #21D4FD;
+            background-image: linear-gradient(19deg,#B721FF  30%, #21D4FD 100%);
+            border-bottom-left-radius: 25%;
+            height: 200px;
+
+        }
+        .footer-copy{
+               background-color: #21D4FD;
+            background-image: linear-gradient(19deg,#B721FF  50%, #21D4FD 100%);
+        }
+        #copy{
+            color: white;
+            font-size: 20px;
+            {#font-family: 'ZCOOL QingKe HuangYou', cursive;#}
+        }
+
+        #quote{
+            font-size: 40px;
+            background-color: lightgray;
+            /*background-image: url('static/images/sharmila_shankar.jpeg');*/
+            background-image: linear-gradient(19deg,#B721FF  50%, #21D4FD 100%);
+            /*background-color: #FEE140;*/
+            background-repeat: no-repeat;
+            border-radius: 70%;
+            margin-top: 50px;
+            height: 200px;
+            width: 60px;
+            background-size:cover;
+        }
+        #btnscroll{
+
+    background-color: white;
+    color: black;
+}
+
+#scrollimage {
+  /*background-color: #333;*/
+  overflow: auto;
+  white-space: nowrap;
+    margin-top: 10px;
+}
+
+#scrollimage img {
+  display: inline-block;
+  color: black;
+  background-color: white;
+  border: 1px solid lightgray;
+    object-fit: contain;
+    width: 900px;
+
+
+}
+
+@media only screen and (max-width: 600px) {
+  #quote{
+      visibility: hidden;
+  }
+    #marg{
+      margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #marg{
+      margin-bottom: 160px;
+  }
+}
+
+    </style>
+
+</head>
+<body >
+
+<script>
+
+    var slideIndex = 0;
+
+
+        function showDivs() {
+            var i;
+            var slides = $(".mySlides");
+            console.log(slides);
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                console.log(slides[i]);
+            }
+            slideIndex++;
+            console.log(slideIndex)
+
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            slides[slideIndex - 1 ].style.display = "block";
+
+            setTimeout(showDivs, 3000);
+        }
+
+        $(document).ready(function () {
+
+            console.log("im loaded")
+            showDivs();
+
+        });
+
+
+
+</script>
+<div class="navbar-custom"  id="marg" >
+<div class="container" >
+    <div class = 'row'>
+        <div class="col-md-6 col-sm-12 col-xs-12 col-xs-12" style="margin-top: 30px;color: white;">
+
+            <h6 class="no-margin" style="font-size: 30px;text-transform: uppercase;"><b>Sharmila shankar</b></h6>
+            <h6 class="no-margin" style="font-size: 20px;text-transform: uppercase;">Professor</h6>
+            <br>
+            <h6 class="no-margin" style="font-size: 25px;text-transform: uppercase;font-family: 'Dancing Script', cursive;">"loves to make friends"</h6>
+            <br>
+        </div>
+
+         <div class="col-md-offset-3 col-md-3 col-sm-12 col-xs-12" id="quote" ></div>
+    </div>
+    </div>
+</div>
+
+<section class="wow fadeIn">
+            <div class="container">
+                <div class="row margin-six-bottom xs-margin-30px-bottom">
+                    <div class="col-md-8 col-sm-10 col-xs-12 center-col text-center">
+                        <div class="alt-font text-medium-gray margin-5px-bottom text-uppercase text-small">About Sharmila Shankar</div>
+                        <h6 class="font-weight-300 text-extra-dark-gray no-margin">Basically <strong class="font-weight-400"> Loves Teaching ,</strong>worked in  <strong class="font-weight-400">ANNA University</strong> Inspired many students . Joined <strong class="font-weight-400">BSAU in 1998</strong>.</h6>
+                        <h6 class="font-weight-300 text-extra-dark-gray no-margin"><strong class="font-weight-400">shares thoughts ,feelings and helps everyone .</strong></h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-12 xs-margin-five-bottom last-paragraph-no-margin wow fadeInUp">
+                        <div class="feature-box">
+                            <div class="content">
+                                <i class="icon-browser text-medium-gray icon-large margin-25px-bottom sm-margin-15px-bottom"></i>
+                                <div class="text-medium alt-font text-capitalize text-extra-dark-gray margin-10px-bottom sm-margin-5px-bottom">POST</div>
+                                <p class="width-85 margin-lr-auto sm-width-100">Joined BSAU in 1998 as Lecturer .<font style="visibility: hidden">Handled all level(UG , PG , Phd) of students .</font></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12 xs-margin-five-bottom last-paragraph-no-margin wow fadeInUp">
+                        <div class="feature-box">
+                            <div class="content">
+                                <i class="icon-book-open text-medium-gray icon-large margin-25px-bottom sm-margin-15px-bottom"></i>
+                                <div class="text-medium alt-font text-capitalize text-extra-dark-gray margin-10px-bottom sm-margin-5px-bottom">TARGET</div>
+                                <p class="width-85 margin-lr-auto sm-width-100">Motivating students for Innovation .<font style="visibility: hidden">Handled all level(UG , PG , Phd) of students .</font></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12 xs-margin-five-bottom last-paragraph-no-margin wow fadeInUp">
+                        <div class="feature-box">
+                            <div class="content">
+                                <i class="fas fa-chalkboard text-medium-gray icon-large margin-25px-bottom sm-margin-15px-bottom"></i>
+                                <div class="text-medium alt-font text-capitalize text-extra-dark-gray margin-10px-bottom sm-margin-5px-bottom">TEACHING</div>
+                                <p class="width-85 margin-lr-auto sm-width-100">Have been teaching for past 25 years . Handled all level(UG , PG , PhD) of students .</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+<section class="parallax one-second-screen parallax-feature-box sm-height-auto" data-stellar-background-ratio="0.3" style="background-image:url('static/images/homepage-9-parallax-img2.jpg');">
+            <div class="opacity-medium bg-extra-dark-gray"></div>
+            <div class="container position-relative">
+                <div class="row">
+                    <div class="col-lg-6 col-md-8 col-sm-8 text-center center-col sm-margin-60px-bottom xs-margin-40px-bottom">
+                        <!-- <a class="popup-youtube" href="https://www.youtube.com/watch?v=nrJtHemSPW4"> -->
+                            <img src="static/images/icon-play.png" style="visibility: hidden;" class="width-130px" alt=""/><!-- </a> -->
+                        <h4 class="alt-font text-white">Education , Career , Goals and Achievements</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="parallax-feature-box-bottom z-index-5 wow fadeInUp">
+                        <div class="col-md-3 col-sm-6 col-xs-12 sm-margin-four-bottom xs-margin-eight-bottom wow fadeInUp">
+                            <div class="bg-white box-shadow-light text-center padding-twelve-all position-relative xs-padding-five-all">
+                                <i class="icon-tools icon-extra-medium text-deep-pink margin-25px-bottom margin-25px-top sm-margin-15px-bottom"></i>
+                                <div class="alt-font text-extra-dark-gray margin-10px-bottom sm-margin-5px-bottom font-weight-600">Education</div>
+                                <p>12<sup>th</sup> - Government school<br>UG - Government Institution<br>PG - Madras university<br>PhD - Anna university .</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 sm-margin-four-bottom xs-margin-eight-bottom wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="bg-white box-shadow-light text-center padding-twelve-all position-relative xs-padding-five-all">
+                                <i class="icon-tools icon-extra-medium text-deep-pink margin-25px-bottom margin-25px-top sm-margin-15px-bottom"></i>
+                                <div class="alt-font text-extra-dark-gray margin-10px-bottom sm-margin-5px-bottom font-weight-600">Career</div>
+                                <p>Had been in various levels . Lecturer , Senior lecturer<br>Associate proffessor , Proffessor , <br>Head of department .</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 xs-margin-eight-bottom wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="bg-white box-shadow-light text-center padding-twelve-all position-relative xs-padding-five-all">
+                                <i class="icon-target icon-extra-medium text-deep-pink margin-25px-bottom margin-25px-top sm-margin-15px-bottom"></i>
+                                <div class="alt-font text-extra-dark-gray margin-10px-bottom sm-margin-5px-bottom font-weight-600">Goals</div>
+                                <p>Motivates students <br> Kindle the students talent for Innovation .</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.6s">
+                            <div class="bg-white box-shadow-light text-center padding-twelve-all position-relative xs-padding-five-all">
+                                <i class="fab fa-font-awesome icon-extra-medium text-deep-pink margin-25px-bottom margin-25px-top sm-margin-15px-bottom"></i>
+                                <div class="alt-font text-extra-dark-gray margin-10px-bottom sm-margin-5px-bottom font-weight-600">Achievements</div>
+                                <p>Best teacher award (2017) given by Alumini association of crescent .</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="wow fadeIn bg-light-gray wow fadeIn">
+            <div class="container margin-six-top md-margin-ten-top sm-no-margin-top">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12 sm-text-center sm-margin-40px-bottom xs-margin-30px-bottom">
+                        <h5 class="text-extra-dark-gray font-weight-600 alt-font no-margin">Most Momerable Moments of life</h5>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 sm-text-center xs-margin-30px-bottom wow fadeIn last-paragraph-no-margin" data-wow-delay="0.2s">
+                        <div class="col-md-3 text-center xs-no-padding-lr">
+                            <h2 class="text-light-gray alt-font letter-spacing-minus-3 no-margin-bottom sm-margin-10px-bottom">01</h2>
+                        </div>
+                        <div class="col-md-9 margin-5px-top sm-text-center xs-no-padding-lr">
+                            <span class="alt-font text-medium text-extra-dark-gray margin-5px-bottom display-block">My Graduation day</span>
+                            <p class="width-80 md-width-100">My graduation day is one of most unforgettable moments of my life , the day when i left my college i couldn't forget it.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 sm-text-center wow fadeIn last-paragraph-no-margin" data-wow-delay="0.4s">
+                        <div class="col-md-3 text-center xs-no-padding-lr">
+                            <h2 class="text-light-gray alt-font letter-spacing-minus-3 no-margin-bottom sm-margin-10px-bottom">02</h2>
+                        </div>
+                        <div class="col-md-9 margin-5px-top sm-text-center xs-no-padding-lr">
+                            <span class="alt-font text-medium text-extra-dark-gray margin-5px-bottom display-block">Family</span>
+                            <p class="width-80 md-width-100">My daughters first birthday is another unforgettable moments for me as a mother.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12 text-center sm-margin-30px-bottom wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
+                        <div class="counter-feature-box-1 border-all display-table width-100 padding-5px-all">
+                            <div class="counter-box display-table-cell vertical-align-middle bg-white">
+                                <i class="fas fa-child icon-medium text-medium-gray margin-15px-bottom"></i>
+                                <h6 class="display-block font-weight-600 text-extra-dark-gray alt-font no-margin-bottom timer appear" data-speed="2000" data-to="700">Mother</h6>
+                                <span>Home maker</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 text-center sm-margin-30px-bottom wow fadeInRight" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInRight;">
+                        <div class="counter-feature-box-1 border-all display-table width-100 padding-5px-all">
+                            <div class="counter-box display-table-cell vertical-align-middle bg-white">
+                                <i class="fas fa-child icon-medium text-medium-gray margin-15px-bottom"></i>
+                                <h6 class="display-block font-weight-600 text-extra-dark-gray alt-font no-margin-bottom timer appear" data-speed="2000" data-to="18000">Father</h6>
+                                <span>Retired foreman</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 text-center xs-margin-30px-bottom wow fadeInRight" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInRight;">
+                        <div class="counter-feature-box-1 border-all display-table width-100 padding-5px-all">
+                            <div class="counter-box display-table-cell vertical-align-middle bg-white">
+                                <i class="fas fa-child icon-medium text-medium-gray margin-15px-bottom"></i>
+                                <h6 class="display-block font-weight-600 text-extra-dark-gray alt-font no-margin-bottom timer appear" data-speed="2000" data-to="120">Younger brother</h6>
+                                <span>Design engineer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInRight" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInRight;">
+                        <div class="counter-feature-box-1 border-all display-table width-100 padding-5px-all">
+                            <div class="counter-box display-table-cell vertical-align-middle bg-white">
+                                <i class="fas fa-child icon-medium text-medium-gray margin-15px-bottom"></i>
+                                <h6 class="display-block font-weight-600 text-extra-dark-gray alt-font no-margin-bottom timer appear" data-speed="2000" data-to="380">Younger brother</h6>
+                                <span>Driver</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <section class="wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+
+    <div class="container"  >
+   <div class="row" >
+
+      <div class="col-md-12 col-sm-12 col-xs-12">
+      <div id="scrollimage">
+
+          <img class="mySlides" src="static/serviceimages/play.png" class="img-responsive" style="width:100%">
+          <img class="mySlides" src="static/serviceimages/dail.png" class="img-responsive" style="width:100%">
+        <img class="mySlides" src="static/serviceimages/message.png" class="img-responsive" style="width:100%">
+      <img class="mySlides" src="static/serviceimages/navigate.png" class="img-responsive" style="width:100%">
+
+
+      </div>
+
+      </div>
+
+
+
+  </div>
+
+
+</div>
+
+
+    </section>
+
+
+{% include 'social.html' %}
+<!-- Footer -->
+<footer class="page-footer font-small cyan darken-3">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 footer-copy" id="copy">© 2018 Copyright:
+      <a href="http://crescent.education/" style="color: white">crescent.education</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
+
+</body>
+</html>
