@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>
-     Sharmila shankar Icon of crescent        
+     Sharmila shankar Icon of Crescent        
     </title>
     <link rel="shortcut icon" href="static/images/cres.png">
     <meta charset="utf-8">
@@ -13,37 +13,39 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet"> -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> -->
+
     {% include 'css.html' %}
     <style>
 
 
         .navbar-custom {
-               background-color: #21D4FD;
-            background-image: linear-gradient(19deg,#B721FF  30%, #21D4FD 100%);
+               /*background-color: #21D4FD;*/
+            /*background-image: linear-gradient(19deg,#B721FF  30%, #21D4FD 100%);*/
+            background: #f06;
+			background: linear-gradient(19deg,#f06  50%, yellow 100%);
             border-bottom-left-radius: 25%;
-            height: 200px;
+            height: 55%;
 
         }
         .footer-copy{
                background-color: #21D4FD;
-            background-image: linear-gradient(19deg,#B721FF  50%, #21D4FD 100%);
+            background-image: linear-gradient(19deg,#f06  50%, yellow 100%);
         }
         #copy{
             color: white;
             font-size: 20px;
-            {#font-family: 'ZCOOL QingKe HuangYou', cursive;#}
+            /*{#font-family: 'ZCOOL QingKe HuangYou', cursive;#}*/
         }
 
         #quote{
             font-size: 40px;
-            background-color: lightgray;
-            /*background-image: url('static/images/sharmila_shankar.jpeg');*/
-            background-image: linear-gradient(19deg,#B721FF  50%, #21D4FD 100%);
-            /*background-color: #FEE140;*/
+            /*background-image: linear-gradient(19deg,#B721FF  50%, #21D4FD 100%);*/
+            /*background-color: #FEE140;*/            
             background-repeat: no-repeat;
             border-radius: 70%;
-            margin-top: 50px;
+            margin-top: 10%;
             height: 200px;
             width: 60px;
             background-size:cover;
@@ -83,9 +85,21 @@
 
 @media only screen and (max-width: 800px) {
   #marg{
-      margin-bottom: 160px;
+      /*margin-bottom: 160px;*/
+  }
+  #quote{
+      visibility: hidden;
   }
 }
+
+
+ #quote img {
+ 	width: 100%;
+ 	background: #f06;
+	background: linear-gradient(45deg, #f06, yellow);
+	border-radius: 40%;
+
+ }
 
     </style>
 
@@ -129,16 +143,22 @@
 <div class="navbar-custom"  id="marg" >
 <div class="container" >
     <div class = 'row'>
-        <div class="col-md-6 col-sm-12 col-xs-12 col-xs-12" style="margin-top: 30px;color: white;">
+        <div class="col-md-9 col-sm-12 col-xs-12 col-xs-12" style="margin-top: 30px;color: white;">
 
-            <h6 class="no-margin" style="font-size: 30px;text-transform: uppercase;"><b>Sharmila shankar</b></h6>
+            <h6 class="no-margin" style="font-size: 30px;text-transform: uppercase;"><b>Sharmila shankar </b></h6>
             <h6 class="no-margin" style="font-size: 20px;text-transform: uppercase;">Professor</h6>
             <br>
-            <h6 class="no-margin" style="font-size: 25px;text-transform: uppercase;font-family: 'Dancing Script', cursive;">"loves to make friends"</h6>
+            <h6 class="no-margin" style="font-size: 20px;text-transform: uppercase;font-family: 'Dancing Script', cursive;">"loves to make friends"</h6><br>
+            <h6 class="no-margin" style="font-size: 20px;text-transform: uppercase;font-family: 'Indie Flower', cursive;">"Don't live someone's life, it make you depressed ,</h6>
+            <h6 class="no-margin" style="font-size: 20px;text-transform: uppercase;font-family: 'Indie Flower', cursive;"> Be thankful and happy with what God has given to you."</h6><br>
+            <h6 class="no-margin" style="font-size: 20px;text-transform: uppercase;font-family: 'Indie Flower', cursive;">Programmer  , Artist , Musician .</h6>
             <br>
         </div>
 
-         <div class="col-md-offset-3 col-md-3 col-sm-12 col-xs-12" id="quote" ></div>
+         <div class="col-md-3 col-sm-12 col-xs-12" id="quote"  >
+         	<!-- <img  src="static/images/sharmila_mam.jpg" class="img-responsive" style="width:100%"> -->
+         	<img  src="static/images/group.png" class="img-responsive" style="width:100%">
+         </div>
     </div>
     </div>
 </div>
@@ -200,14 +220,18 @@
                             <div class="bg-white box-shadow-light text-center padding-twelve-all position-relative xs-padding-five-all">
                                 <i class="icon-tools icon-extra-medium text-deep-pink margin-25px-bottom margin-25px-top sm-margin-15px-bottom"></i>
                                 <div class="alt-font text-extra-dark-gray margin-10px-bottom sm-margin-5px-bottom font-weight-600">Education</div>
-                                <p>12<sup>th</sup> - Government school<br>UG - Government Institution<br>PG - Madras university<br>PhD - Anna university .</p>
+                                <p>Ph.D(CSE) - Anna-univ(2012)<br>ME(CSE) - Madras-Univ(2002)<br>
+                                	MS - (software systems) , BITS(1997).	
+                                	<br>B.E.(CSE) - Bharathiyar-Univ(1993).
+                                	<br>12<sup>th</sup> - Government school</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6 col-xs-12 sm-margin-four-bottom xs-margin-eight-bottom wow fadeInUp" data-wow-delay="0.2s">
                             <div class="bg-white box-shadow-light text-center padding-twelve-all position-relative xs-padding-five-all">
                                 <i class="icon-tools icon-extra-medium text-deep-pink margin-25px-bottom margin-25px-top sm-margin-15px-bottom"></i>
                                 <div class="alt-font text-extra-dark-gray margin-10px-bottom sm-margin-5px-bottom font-weight-600">Career</div>
-                                <p>Had been in various levels . Lecturer , Senior lecturer<br>Associate proffessor , Proffessor , <br>Head of department .</p>
+                                <p>Had been in various levels . Deputy Director <br> Head of department, 
+                                	<br> Proffessor <br>Associate proffessor  <br> Senior lecturer, Lecturer  <br>Head of department .</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6 col-xs-12 xs-margin-eight-bottom wow fadeInUp" data-wow-delay="0.4s">
@@ -222,41 +246,339 @@
                                 <i class="fab fa-font-awesome icon-extra-medium text-deep-pink margin-25px-bottom margin-25px-top sm-margin-15px-bottom"></i>
                                 <div class="alt-font text-extra-dark-gray margin-10px-bottom sm-margin-5px-bottom font-weight-600">Achievements</div>
                                 <p>Best teacher award (2017) given by Alumini association of crescent .</p>
+                                <p>Received a fund of Rs. 35,000/- for the conduct of National Seminar on
+								MANETs, 2010.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <section class="wow fadeIn bg-light-gray wow fadeIn">
+        <br><br><br><br><br><br><br><br>
+        <h1 style="font-size: 40px;"><center>PUBLICATIONS</center></h1>
+        <section class="wow fadeIn bg-light-gray wow fadeIn"  data-stellar-background-ratio="0.3" style="visibility: visible; animation-name: fadeIn;">
+        <!-- <div class="opacity-medium bg-extra-dark-gray"></div> -->
             <div class="container margin-six-top md-margin-ten-top sm-no-margin-top">
-                <div class="row">
-                    <div class="col-md-4 col-sm-12 col-xs-12 sm-text-center sm-margin-40px-bottom xs-margin-30px-bottom">
-                        <h5 class="text-extra-dark-gray font-weight-600 alt-font no-margin">Most Momerable Moments of life</h5>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 sm-text-center xs-margin-30px-bottom wow fadeIn last-paragraph-no-margin" data-wow-delay="0.2s">
+            	
+                <div class="row" style="margin-top: 7%;">
+                    <div class="col-md-12  col-lg-12 col-sm-12  col-xs-12 sm-text-center xs-margin-30px-bottom wow fadeIn last-paragraph-no-margin" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
                         <div class="col-md-3 text-center xs-no-padding-lr">
                             <h2 class="text-light-gray alt-font letter-spacing-minus-3 no-margin-bottom sm-margin-10px-bottom">01</h2>
                         </div>
                         <div class="col-md-9 margin-5px-top sm-text-center xs-no-padding-lr">
-                            <span class="alt-font text-medium text-extra-dark-gray margin-5px-bottom display-block">My Graduation day</span>
-                            <p class="width-80 md-width-100">My graduation day is one of most unforgettable moments of my life , the day when i left my college i couldn't forget it.</p>
+                            <p class="width-100 md-width-100" >“ICT’s role in building and understanding Indian Telemedicine Environment : A
+							Study”, Information and Communication Technology for Competitive Strategies,
+							Springer Publications, 2019. Scopus Indexed.</p>
                         </div>
+                        <div class="separator-line-horrizontal-full bg-extra-light-gray margin-60px-tb height-2px width-100 center-col"></div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 sm-text-center wow fadeIn last-paragraph-no-margin" data-wow-delay="0.4s">
+                    <div class="col-md-12  col-lg-12 col-sm-12  col-xs-12 sm-text-center xs-margin-30px-bottom wow fadeIn last-paragraph-no-margin" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
                         <div class="col-md-3 text-center xs-no-padding-lr">
                             <h2 class="text-light-gray alt-font letter-spacing-minus-3 no-margin-bottom sm-margin-10px-bottom">02</h2>
                         </div>
                         <div class="col-md-9 margin-5px-top sm-text-center xs-no-padding-lr">
-                            <span class="alt-font text-medium text-extra-dark-gray margin-5px-bottom display-block">Family</span>
-                            <p class="width-80 md-width-100">My daughters first birthday is another unforgettable moments for me as a mother.</p>
+                            <p class="width-100 md-width-100" >“Using an innovative stacked ensemble algorithm for accurate prediction of the
+							preterm birth”, Journal of the Turkish German Gynecological Association,
+							December 2018. Scopus Indexed.</p>
+							                        </div>
+                        <div class="separator-line-horrizontal-full bg-extra-light-gray margin-60px-tb height-2px width-100 center-col"></div>
+                    </div>
+                    <div class="col-md-12  col-lg-12 col-sm-12  col-xs-12 sm-text-center xs-margin-30px-bottom wow fadeIn last-paragraph-no-margin" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                        <div class="col-md-3 text-center xs-no-padding-lr">
+                            <h2 class="text-light-gray alt-font letter-spacing-minus-3 no-margin-bottom sm-margin-10px-bottom">03</h2>
                         </div>
+                        <div class="col-md-9 margin-5px-top sm-text-center xs-no-padding-lr">
+                            <p class="width-100 md-width-100" >“A Multi-Tier Stacked Ensemble Algorithm to Reduce the Regret of Incremental
+						Learning for Streaming Data”, in IEEE Access, Vol. 6, Page(s): 48726 – 48739,
+						Electronic ISSN: 2169-3536, 2018. Scopus Indexed.</p>
+						                        </div>
+                        <div class="separator-line-horrizontal-full bg-extra-light-gray margin-60px-tb height-2px width-100 center-col"></div>
+                    </div>
+                    <div class="col-md-12  col-lg-12 col-sm-12  col-xs-12 sm-text-center xs-margin-30px-bottom wow fadeIn last-paragraph-no-margin" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                        <div class="col-md-3 text-center xs-no-padding-lr">
+                            <h2 class="text-light-gray alt-font letter-spacing-minus-3 no-margin-bottom sm-margin-10px-bottom">04</h2>
+                        </div>
+                        <div class="col-md-9 margin-5px-top sm-text-center xs-no-padding-lr">
+                            <p class="width-100 md-width-100" >“Naive Bayes algorithm for reducing the redundant data in the cluster based RFID
+						network”, in the International Journal of Pure and Applied Mathematics Vol.
+						118. No. 9, 2018, Page no.: 729-735. Scopus Indexed.</p>
+                        </div>
+                        <div class="separator-line-horrizontal-full bg-extra-light-gray margin-60px-tb height-2px width-100 center-col"></div>
+                    </div>
+                    <div class="col-md-12  col-lg-12 col-sm-12  col-xs-12 sm-text-center xs-margin-30px-bottom wow fadeIn last-paragraph-no-margin" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                        <div class="col-md-3 text-center xs-no-padding-lr">
+                            <h2 class="text-light-gray alt-font letter-spacing-minus-3 no-margin-bottom sm-margin-10px-bottom">05</h2>
+                        </div>
+                        <div class="col-md-9 margin-5px-top sm-text-center xs-no-padding-lr">
+                            <p class="width-100 md-width-100" >“A Survey on Test Case Prioritization Techniques”, in International Journal of
+							Pure and Applied Mathematics, Volume 119 No. 16 2018, PP: 3355-3365, ISSN:
+							1314-3395. https://acadpubl.eu/hub/2018-119-16/2/350.pdf. Scopus Indexed.
+							</p>
+                        </div>
+                        <div class="separator-line-horrizontal-full bg-extra-light-gray margin-60px-tb height-2px width-100 center-col"></div>
+                    </div>
+                    <div class="col-md-12  col-lg-12 col-sm-12  col-xs-12 sm-text-center xs-margin-30px-bottom wow fadeIn last-paragraph-no-margin" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                        <div class="col-md-3 text-center xs-no-padding-lr">
+                            <h2 class="text-light-gray alt-font letter-spacing-minus-3 no-margin-bottom sm-margin-10px-bottom">06</h2>
+                        </div>
+                        <div class="col-md-9 margin-5px-top sm-text-center xs-no-padding-lr">
+                            <p class="width-100 md-width-100" >“Disabling Camera Features in a Mobile Phone in Restricted Zones”, Indian
+							Journal of Science and Technology, 9(33), September 2016.
+							DOI: 10.17485/ijst/2016/v9i33/99608. Scopus Indexed
+							http://www.indjst.org/index.php/indjst/article/view/99608
+							</p>
+                        </div>
+                        <div class="separator-line-horrizontal-full bg-extra-light-gray margin-60px-tb height-2px width-100 center-col"></div>
+                    </div>
+                    <div class="col-md-12  col-lg-12 col-sm-12  col-xs-12 sm-text-center xs-margin-30px-bottom wow fadeIn last-paragraph-no-margin" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                        <div class="col-md-3 text-center xs-no-padding-lr">
+                            <h2 class="text-light-gray alt-font letter-spacing-minus-3 no-margin-bottom sm-margin-10px-bottom">07</h2>
+                        </div>
+                        <div class="col-md-9 margin-5px-top sm-text-center xs-no-padding-lr">
+                            <p class="width-100 md-width-100" >“Hybrid Zigbee RFID for detection of Active tags and Energy Minimization”, in
+							Journal of Theoretical and Applied Information Technology, Feb. 2017.
+							http://www.jatit.org/volumes/Vol95No3/6Vol95No3.pdf, Scopus Indexed</p>
+                        </div>
+                        <div class="separator-line-horrizontal-full bg-extra-light-gray margin-60px-tb height-2px width-100 center-col"></div>
                     </div>
                 </div>
             </div>
         </section>
+
+<h1 style="font-size: 40px;margin-top: 20px;margin-bottom: 20px;"><center>UNIVERSITY AND DEPARTMENT SERVICE</center></h1>
+        <section class="wow fadeIn bg-light-gray wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+            <div class="container margin-six-top md-margin-ten-top sm-no-margin-top">
+                <div class="row">
+                    <div class="col-md-12  col-lg-12 col-sm-12  col-xs-12 sm-text-center xs-margin-30px-bottom wow fadeIn last-paragraph-no-margin" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                        <div class="col-md-3 text-center xs-no-padding-lr">
+                            <h2 class="text-light-gray alt-font letter-spacing-minus-3 no-margin-bottom sm-margin-10px-bottom">01</h2>
+                        </div>
+                        <div class="col-md-9 margin-5px-top sm-text-center xs-no-padding-lr">
+                            <p class="width-100 md-width-100">Instrumental in AICTE approval process of the University, 2018.</p>
+                        </div>
+                        <div class="separator-line-horrizontal-full bg-extra-light-gray margin-60px-tb height-2px width-100 center-col"></div>
+                    </div>
+                    <div class="col-md-12  col-lg-12 col-sm-12  col-xs-12 sm-text-center xs-margin-30px-bottom wow fadeIn last-paragraph-no-margin" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                        <div class="col-md-3 text-center xs-no-padding-lr">
+                            <h2 class="text-light-gray alt-font letter-spacing-minus-3 no-margin-bottom sm-margin-10px-bottom">02</h2>
+                        </div>
+                        <div class="col-md-9 margin-5px-top sm-text-center xs-no-padding-lr">
+                            <p class="width-100 md-width-100">Instrumental in UGC approval process of the unapproved courses, 2018</p>
+                        </div>
+                        <div class="separator-line-horrizontal-full bg-extra-light-gray margin-60px-tb height-2px width-100 center-col"></div>
+                    </div>
+                    <div class="col-md-12  col-lg-12 col-sm-12  col-xs-12 sm-text-center xs-margin-30px-bottom wow fadeIn last-paragraph-no-margin" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                        <div class="col-md-3 text-center xs-no-padding-lr">
+                            <h2 class="text-light-gray alt-font letter-spacing-minus-3 no-margin-bottom sm-margin-10px-bottom">03</h2>
+                        </div>
+                        <div class="col-md-9 margin-5px-top sm-text-center xs-no-padding-lr">
+                            <p class="width-100 md-width-100">Steps to setup Virtual Reality Lab in the University.</p>
+                        </div>
+                        <div class="separator-line-horrizontal-full bg-extra-light-gray margin-60px-tb height-2px width-100 center-col"></div>
+                    </div>
+                    <div class="col-md-12  col-lg-12 col-sm-12  col-xs-12 sm-text-center xs-margin-30px-bottom wow fadeIn last-paragraph-no-margin" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                        <div class="col-md-3 text-center xs-no-padding-lr">
+                            <h2 class="text-light-gray alt-font letter-spacing-minus-3 no-margin-bottom sm-margin-10px-bottom">04</h2>
+                        </div>
+                        <div class="col-md-9 margin-5px-top sm-text-center xs-no-padding-lr">
+                            <p class="width-100 md-width-100">Established a Research Lab in the CSE Dept.</p>
+                        </div>
+                        <div class="separator-line-horrizontal-full bg-extra-light-gray margin-60px-tb height-2px width-100 center-col"></div>
+                    </div>
+                    <div class="col-md-12  col-lg-12 col-sm-12  col-xs-12 sm-text-center xs-margin-30px-bottom wow fadeIn last-paragraph-no-margin" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                        <div class="col-md-3 text-center xs-no-padding-lr">
+                            <h2 class="text-light-gray alt-font letter-spacing-minus-3 no-margin-bottom sm-margin-10px-bottom">05</h2>
+                        </div>
+                        <div class="col-md-9 margin-5px-top sm-text-center xs-no-padding-lr">
+                            <p class="width-100 md-width-100">Established IoT Lab in CSE Dept.</p>
+                        </div>
+                        <div class="separator-line-horrizontal-full bg-extra-light-gray margin-60px-tb height-2px width-100 center-col"></div>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+
+        
+
+<h1 style="font-size: 40px;margin-top: 20px;margin-bottom: 20px;"><center>PROFESSIONAL DEVELOPMENT</center></h1>
+        <section class="wow fadeIn bg-light-gray wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+            <div class="container margin-six-top md-margin-ten-top sm-no-margin-top">
+                <div class="row">
+                    <div class="col-md-12  col-lg-12 col-sm-12  col-xs-12 sm-text-center xs-margin-30px-bottom wow fadeIn last-paragraph-no-margin" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                        <div class="col-md-3 text-center xs-no-padding-lr">
+                            <h2 class="text-light-gray alt-font letter-spacing-minus-3 no-margin-bottom sm-margin-10px-bottom">01</h2>
+                        </div>
+                        <div class="col-md-9 margin-5px-top sm-text-center xs-no-padding-lr">
+                            <p class="width-100 md-width-100">Participated in technical seminar in “Technical Seminar on Embedded Software
+							Safety & Security”, 25th Oct 2017.
+							</p>
+                        </div>
+                        <div class="separator-line-horrizontal-full bg-extra-light-gray margin-60px-tb height-2px width-100 center-col"></div>
+                    </div>
+                     <div class="col-md-12  col-lg-12 col-sm-12  col-xs-12 sm-text-center xs-margin-30px-bottom wow fadeIn last-paragraph-no-margin" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                        <div class="col-md-3 text-center xs-no-padding-lr">
+                            <h2 class="text-light-gray alt-font letter-spacing-minus-3 no-margin-bottom sm-margin-10px-bottom">02</h2>
+                        </div>
+                        <div class="col-md-9 margin-5px-top sm-text-center xs-no-padding-lr">
+                            <p class="width-100 md-width-100">Participated in FCCII conference titled “Designing the Future India”, 24th Feb
+							2016. </p>
+                        </div>
+                        <div class="separator-line-horrizontal-full bg-extra-light-gray margin-60px-tb height-2px width-100 center-col"></div>
+                    </div>
+                     <div class="col-md-12  col-lg-12 col-sm-12  col-xs-12 sm-text-center xs-margin-30px-bottom wow fadeIn last-paragraph-no-margin" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                        <div class="col-md-3 text-center xs-no-padding-lr">
+                            <h2 class="text-light-gray alt-font letter-spacing-minus-3 no-margin-bottom sm-margin-10px-bottom">03</h2>
+                        </div>
+                        <div class="col-md-9 margin-5px-top sm-text-center xs-no-padding-lr">
+                            <p class="width-100 md-width-100">Participated in Workshop "Imparting Essential IT Skills for Employment Using
+							Lab Simulators”, 22nd Aug 2015.</p>
+                        </div>
+                        <div class="separator-line-horrizontal-full bg-extra-light-gray margin-60px-tb height-2px width-100 center-col"></div>
+                    </div>
+                     <div class="col-md-12  col-lg-12 col-sm-12  col-xs-12 sm-text-center xs-margin-30px-bottom wow fadeIn last-paragraph-no-margin" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                        <div class="col-md-3 text-center xs-no-padding-lr">
+                            <h2 class="text-light-gray alt-font letter-spacing-minus-3 no-margin-bottom sm-margin-10px-bottom">04</h2>
+                        </div>
+                        <div class="col-md-9 margin-5px-top sm-text-center xs-no-padding-lr">
+                            <p class="width-100 md-width-100">Attended FICCI Seminar on “Integrated Digital Solutions for a Smarter Tamil
+							Nadu”, July 27, 2015.</p>
+                        </div>
+                        <div class="separator-line-horrizontal-full bg-extra-light-gray margin-60px-tb height-2px width-100 center-col"></div>
+                    </div>
+                     <div class="col-md-12  col-lg-12 col-sm-12  col-xs-12 sm-text-center xs-margin-30px-bottom wow fadeIn last-paragraph-no-margin" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                        <div class="col-md-3 text-center xs-no-padding-lr">
+                            <h2 class="text-light-gray alt-font letter-spacing-minus-3 no-margin-bottom sm-margin-10px-bottom">05</h2>
+                        </div>
+                        <div class="col-md-9 margin-5px-top sm-text-center xs-no-padding-lr">
+                            <p class="width-100 md-width-100">Participated in "Innovative teaching Engaging Students", June 18,2015</p>
+                        </div>
+                        <div class="separator-line-horrizontal-full bg-extra-light-gray margin-60px-tb height-2px width-100 center-col"></div>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+
+<h1 style="font-size: 40px;margin-top: 20px;margin-bottom: 20px;"><center>PROFESSIONAL AFFILIATIONS
+</center></h1>
+        <section class="wow fadeIn bg-light-gray wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+            <div class="container margin-six-top md-margin-ten-top sm-no-margin-top">
+                <div class="row">
+                    <div class="col-md-12  col-lg-12 col-sm-12  col-xs-12 sm-text-center xs-margin-30px-bottom wow fadeIn last-paragraph-no-margin" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                        <div class="col-md-3 text-center xs-no-padding-lr">
+                            <h2 class="text-light-gray alt-font letter-spacing-minus-3 no-margin-bottom sm-margin-10px-bottom">01</h2>
+                        </div>
+                        <div class="col-md-9 margin-5px-top sm-text-center xs-no-padding-lr">
+                            <p class="width-100 md-width-100">Professional Member of ACM, CSI.</p>
+                        </div>
+                        <div class="separator-line-horrizontal-full bg-extra-light-gray margin-60px-tb height-2px width-100 center-col"></div>
+                    </div>
+                    <div class="col-md-12  col-lg-12 col-sm-12  col-xs-12 sm-text-center xs-margin-30px-bottom wow fadeIn last-paragraph-no-margin" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                        <div class="col-md-3 text-center xs-no-padding-lr">
+                            <h2 class="text-light-gray alt-font letter-spacing-minus-3 no-margin-bottom sm-margin-10px-bottom">02</h2>
+                        </div>
+                        <div class="col-md-9 margin-5px-top sm-text-center xs-no-padding-lr">
+                            <p class="width-100 md-width-100">Member of Board of Examinations for M.Sc. Integrated Course, Madras
+							University, 2002-2006.</p>
+                        </div>
+                        <div class="separator-line-horrizontal-full bg-extra-light-gray margin-60px-tb height-2px width-100 center-col"></div>
+                    </div>
+                     <div class="col-md-12  col-lg-12 col-sm-12  col-xs-12 sm-text-center xs-margin-30px-bottom wow fadeIn last-paragraph-no-margin" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                        <div class="col-md-3 text-center xs-no-padding-lr">
+                            <h2 class="text-light-gray alt-font letter-spacing-minus-3 no-margin-bottom sm-margin-10px-bottom">03</h2>
+                        </div>
+                        <div class="col-md-9 margin-5px-top sm-text-center xs-no-padding-lr">
+                            <p class="width-100 md-width-100">Member of Board of Examiners in various Universities such as <br>oMadras University till 2011.
+							o Government College of Technology, Coimbatore</p>
+                        </div>
+                        <div class="separator-line-horrizontal-full bg-extra-light-gray margin-60px-tb height-2px width-100 center-col"></div>
+                    </div>
+                     <div class="col-md-12  col-lg-12 col-sm-12  col-xs-12 sm-text-center xs-margin-30px-bottom wow fadeIn last-paragraph-no-margin" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                        <div class="col-md-3 text-center xs-no-padding-lr">
+                            <h2 class="text-light-gray alt-font letter-spacing-minus-3 no-margin-bottom sm-margin-10px-bottom">04</h2>
+                        </div>
+                        <div class="col-md-9 margin-5px-top sm-text-center xs-no-padding-lr">
+                            <p class="width-100 md-width-100">Doctorol Committee Member in CSE research board of <br>
+							o S R M University
+							o Bharath University</p>
+                        </div>
+                        <div class="separator-line-horrizontal-full bg-extra-light-gray margin-60px-tb height-2px width-100 center-col"></div>
+                    </div>
+                     <div class="col-md-12  col-lg-12 col-sm-12  col-xs-12 sm-text-center xs-margin-30px-bottom wow fadeIn last-paragraph-no-margin" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                        <div class="col-md-3 text-center xs-no-padding-lr">
+                            <h2 class="text-light-gray alt-font letter-spacing-minus-3 no-margin-bottom sm-margin-10px-bottom">05</h2>
+                        </div>
+                        <div class="col-md-9 margin-5px-top sm-text-center xs-no-padding-lr">
+                            <p class="width-100 md-width-100">Madras University Question Paper Setting Board Member of M.Sc. (CST), Apr.
+							2005.</p>
+                        </div>
+                        <div class="separator-line-horrizontal-full bg-extra-light-gray margin-60px-tb height-2px width-100 center-col"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<h1 style="font-size: 40px;margin-top: 20px;margin-bottom: 20px;"><center>COMMUNITY SERVICE
+</center></h1>
+        <section class="wow fadeIn bg-light-gray wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+            <div class="container margin-six-top md-margin-ten-top sm-no-margin-top">
+                <div class="row">
+                    <div class="col-md-12  col-lg-12 col-sm-12  col-xs-12 sm-text-center xs-margin-30px-bottom wow fadeIn last-paragraph-no-margin" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                        <div class="col-md-3 text-center xs-no-padding-lr">
+                            <h2 class="text-light-gray alt-font letter-spacing-minus-3 no-margin-bottom sm-margin-10px-bottom">01</h2>
+                        </div>
+                        <div class="col-md-9 margin-5px-top sm-text-center xs-no-padding-lr">
+                            <p class="width-100 md-width-100">Arranged a blood donation camp for YRC through VHS Blood Bank and received
+							an award from “The Madras Voluntary Blood Bureau”, for donating more than
+							100 units of blood.</p>
+                        </div>
+                        <div class="separator-line-horrizontal-full bg-extra-light-gray margin-60px-tb height-2px width-100 center-col"></div>
+                    </div>
+                   <div class="col-md-12  col-lg-12 col-sm-12  col-xs-12 sm-text-center xs-margin-30px-bottom wow fadeIn last-paragraph-no-margin" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                        <div class="col-md-3 text-center xs-no-padding-lr">
+                            <h2 class="text-light-gray alt-font letter-spacing-minus-3 no-margin-bottom sm-margin-10px-bottom">02</h2>
+                        </div>
+                        <div class="col-md-9 margin-5px-top sm-text-center xs-no-padding-lr">
+                            <p class="width-100 md-width-100">Member of Hemophilia Society</p>
+                        </div>
+                        <div class="separator-line-horrizontal-full bg-extra-light-gray margin-60px-tb height-2px width-100 center-col"></div>
+                    </div>
+                    <div class="col-md-12  col-lg-12 col-sm-12  col-xs-12 sm-text-center xs-margin-30px-bottom wow fadeIn last-paragraph-no-margin" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                        <div class="col-md-3 text-center xs-no-padding-lr">
+                            <h2 class="text-light-gray alt-font letter-spacing-minus-3 no-margin-bottom sm-margin-10px-bottom">03</h2>
+                        </div>
+                        <div class="col-md-9 margin-5px-top sm-text-center xs-no-padding-lr">
+                            <p class="width-100 md-width-100">Member of Youth Red Cross</p>
+                        </div>
+                        <div class="separator-line-horrizontal-full bg-extra-light-gray margin-60px-tb height-2px width-100 center-col"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
         <section class="wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+
+    <div class="container"  >
+   <div class="row" >
+
+      <div class="col-md-12 col-sm-12 col-xs-12">
+      <div id="scrollimage">
+
+          <img class="mySlides" src="static/images/group.png" class="img-responsive" style="width:100%">
+          <img class="mySlides" src="static/images/arcane.png" class="img-responsive" style="width:100%">
+    
+      </div>
+
+      </div>
+
+  </div>
+</div>
+    </section>
+
+<section class="wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
             <div class="container">
                 <div class="row">
                     <div class="col-md-3 col-sm-6 col-xs-12 text-center sm-margin-30px-bottom wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
@@ -299,34 +621,36 @@
             </div>
         </section>
 
-    <section class="wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+        <section class="wow fadeIn bg-light-gray wow fadeIn">
+            <div class="container margin-six-top md-margin-ten-top sm-no-margin-top">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12 sm-text-center sm-margin-40px-bottom xs-margin-30px-bottom">
+                        <h5 class="text-extra-dark-gray font-weight-600 alt-font no-margin">Most Momerable Moments of life</h5>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 sm-text-center xs-margin-30px-bottom wow fadeIn last-paragraph-no-margin" data-wow-delay="0.2s">
+                        <div class="col-md-3 text-center xs-no-padding-lr">
+                            <h2 class="text-light-gray alt-font letter-spacing-minus-3 no-margin-bottom sm-margin-10px-bottom">01</h2>
+                        </div>
+                        <div class="col-md-9 margin-5px-top sm-text-center xs-no-padding-lr">
+                            <span class="alt-font text-medium text-extra-dark-gray margin-5px-bottom display-block">My Graduation day</span>
+                            <p class="width-80 md-width-100">My graduation day is one of most unforgettable moments of my life , the day when i left my college i couldn't forget it.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 sm-text-center wow fadeIn last-paragraph-no-margin" data-wow-delay="0.4s">
+                        <div class="col-md-3 text-center xs-no-padding-lr">
+                            <h2 class="text-light-gray alt-font letter-spacing-minus-3 no-margin-bottom sm-margin-10px-bottom">02</h2>
+                        </div>
+                        <div class="col-md-9 margin-5px-top sm-text-center xs-no-padding-lr">
+                            <span class="alt-font text-medium text-extra-dark-gray margin-5px-bottom display-block">Family</span>
+                            <p class="width-80 md-width-100">My daughters first birthday is another unforgettable moments for me as a mother.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
 
-    <div class="container"  >
-   <div class="row" >
-
-      <div class="col-md-12 col-sm-12 col-xs-12">
-      <div id="scrollimage">
-
-          <img class="mySlides" src="static/serviceimages/play.png" class="img-responsive" style="width:100%">
-          <img class="mySlides" src="static/serviceimages/dail.png" class="img-responsive" style="width:100%">
-        <img class="mySlides" src="static/serviceimages/message.png" class="img-responsive" style="width:100%">
-      <img class="mySlides" src="static/serviceimages/navigate.png" class="img-responsive" style="width:100%">
-
-
-      </div>
-
-      </div>
-
-
-
-  </div>
-
-
-</div>
-
-
-    </section>
-
+    
 
 {% include 'social.html' %}
 <!-- Footer -->
