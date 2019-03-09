@@ -134,12 +134,39 @@
 
         $(document).ready(function () {
 
+        	$("#pubdata").hide();
+        	$("#univdata").hide();
+        	$("#profdevdata").hide();
+        	$("#profaffdata").hide();
+        	$("#commdata").hide();
             console.log("im loaded")
             showDivs();
 
+             $("#pub").click(function(){
+             	 console.log("clicked")
+	    		$("#pubdata").toggle();
+	  		});
+
+              $("#univ").click(function(){
+             	 console.log("clicked")
+	    		$("#univdata").toggle();
+	  		});
+               $("#profdev").click(function(){
+             	 console.log("clicked")
+	    		$("#profdevdata").toggle();
+	  		});
+               $("#profaff").click(function(){
+             	 console.log("clicked")
+	    		$("#profaffdata").toggle();
+	  		});
+               $("#comm").click(function(){
+             	 console.log("clicked")
+	    		$("#commdata").toggle();
+	  		});
+
         });
 
-
+       
 
 </script>
 <div class="navbar-custom"  id="marg" >
@@ -257,8 +284,8 @@
             </div>
         </section>
         <br><br><br><br><br><br><br><br>
-        <h1 style="font-size: 40px;"><center>PUBLICATIONS</center></h1>
-        <section class="wow fadeIn bg-light-gray wow fadeIn"  data-stellar-background-ratio="0.3" style="visibility: visible; animation-name: fadeIn;">
+        <h1><center><button type="button" class="btn btn-default" id="pub"  style="font-size: 30px;color: gray;" >PUBLICATIONS</button></center></h1>
+        <section class="wow fadeIn bg-light-gray wow fadeIn"  data-stellar-background-ratio="0.3" style="animation-name: fadeIn;" id="pubdata">
         <!-- <div class="opacity-medium bg-extra-dark-gray"></div> -->
             <div class="container margin-six-top md-margin-ten-top sm-no-margin-top">
             	
@@ -347,8 +374,8 @@
             </div>
         </section>
 
-<h1 style="font-size: 40px;margin-top: 20px;margin-bottom: 20px;"><center>UNIVERSITY AND DEPARTMENT SERVICE</center></h1>
-        <section class="wow fadeIn bg-light-gray wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+<h1 ><center><button type="button" class="btn btn-default" id="univ"  style="font-size: 30px;color: gray;" >UNIVERSITY AND DEPARTMENT SERVICE</button></center></h1>
+        <section class="wow fadeIn bg-light-gray wow fadeIn" style="visibility: visible; animation-name: fadeIn;" id="univdata">
             <div class="container margin-six-top md-margin-ten-top sm-no-margin-top">
                 <div class="row">
                     <div class="col-md-12  col-lg-12 col-sm-12  col-xs-12 sm-text-center xs-margin-30px-bottom wow fadeIn last-paragraph-no-margin" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
@@ -403,8 +430,8 @@
 
         
 
-<h1 style="font-size: 40px;margin-top: 20px;margin-bottom: 20px;"><center>PROFESSIONAL DEVELOPMENT</center></h1>
-        <section class="wow fadeIn bg-light-gray wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+<h1 ><center><button type="button" class="btn btn-default" id="profdev"  style="font-size: 30px;color: gray;" >PROFESSIONAL DEVELOPMENT</button></center></h1>
+        <section class="wow fadeIn bg-light-gray wow fadeIn" style="visibility: visible; animation-name: fadeIn;" id="profdevdata">
             <div class="container margin-six-top md-margin-ten-top sm-no-margin-top">
                 <div class="row">
                     <div class="col-md-12  col-lg-12 col-sm-12  col-xs-12 sm-text-center xs-margin-30px-bottom wow fadeIn last-paragraph-no-margin" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
@@ -462,9 +489,9 @@
             </div>
         </section>
 
-<h1 style="font-size: 40px;margin-top: 20px;margin-bottom: 20px;"><center>PROFESSIONAL AFFILIATIONS
+<h1 ><center><button type="button" class="btn btn-default" id="profaff"  style="font-size: 30px;color: gray;" >PROFESSIONAL AFFILIATIONS</button>
 </center></h1>
-        <section class="wow fadeIn bg-light-gray wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+        <section class="wow fadeIn bg-light-gray wow fadeIn" style="visibility: visible; animation-name: fadeIn;" id="profaffdata">
             <div class="container margin-six-top md-margin-ten-top sm-no-margin-top">
                 <div class="row">
                     <div class="col-md-12  col-lg-12 col-sm-12  col-xs-12 sm-text-center xs-margin-30px-bottom wow fadeIn last-paragraph-no-margin" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
@@ -521,9 +548,9 @@
             </div>
         </section>
 
-<h1 style="font-size: 40px;margin-top: 20px;margin-bottom: 20px;"><center>COMMUNITY SERVICE
+<h1 ><center><button type="button" class="btn btn-default" id="comm"  style="font-size: 30px;color: gray;" >COMMUNITY SERVICE</button>
 </center></h1>
-        <section class="wow fadeIn bg-light-gray wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+        <section class="wow fadeIn bg-light-gray wow fadeIn" style="visibility: visible; animation-name: fadeIn;" id="commdata">
             <div class="container margin-six-top md-margin-ten-top sm-no-margin-top">
                 <div class="row">
                     <div class="col-md-12  col-lg-12 col-sm-12  col-xs-12 sm-text-center xs-margin-30px-bottom wow fadeIn last-paragraph-no-margin" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
