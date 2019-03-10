@@ -19,18 +19,21 @@
   <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">	
 
     {% include 'css.html' %}
-    <style>
-
-
+    
+  <style type="text/css">
+      
         .navbar-custom {
                /*background-color: #21D4FD;*/
             /*background-image: linear-gradient(19deg,#B721FF  30%, #21D4FD 100%);*/
             background: #f06;
-			background: linear-gradient(19deg,#f06  50%, yellow 100%);
+            background: linear-gradient(19deg,#f06  50%, yellow 100%);
             border-bottom-left-radius: 25%;
+            /*position: fixed;*/
             height: 55%;
+            transition: width 3s;
 
         }
+        
         .footer-copy{
                background-color: #21D4FD;
             background-image: linear-gradient(19deg,#f06  50%, yellow 100%);
@@ -96,18 +99,14 @@
 
 
  #quote img {
- 	width: 100%;
- 	background: #f06;
-	background: linear-gradient(45deg, #f06, yellow);
-	border-radius: 40%;
+    width: 100%;
+    background: #f06;
+    background: linear-gradient(45deg, #f06, yellow);
+    border-radius: 40%;
 
  }
 
-    </style>
-
-</head>
-<body >
-
+  </style>
 <script>
 
     var slideIndex = 0;
@@ -134,47 +133,63 @@
 
         $(document).ready(function () {
 
-        	$("#pubdata").hide();
-        	$("#univdata").hide();
-        	$("#profdevdata").hide();
-        	$("#profaffdata").hide();
-        	$("#commdata").hide();
+            $('.navbar-custom').show();
+            $('#small-nav-custom').hide();
+            $("#pubdata").hide();
+            $("#univdata").hide();
+            $("#profdevdata").hide();
+            $("#profaffdata").hide();
+            $("#commdata").hide();
             console.log("im loaded")
             showDivs();
 
              $("#pub").click(function(){
-             	 console.log("clicked")
-	    		$("#pubdata").toggle();
-	  		});
+                 console.log("clicked")
+                $("#pubdata").toggle();
+            });
 
               $("#univ").click(function(){
-             	 console.log("clicked")
-	    		$("#univdata").toggle();
-	  		});
+                 console.log("clicked")
+                $("#univdata").toggle();
+            });
                $("#profdev").click(function(){
-             	 console.log("clicked")
-	    		$("#profdevdata").toggle();
-	  		});
+                 console.log("clicked")
+                $("#profdevdata").toggle();
+            });
                $("#profaff").click(function(){
-             	 console.log("clicked")
-	    		$("#profaffdata").toggle();
-	  		});
+                 console.log("clicked")
+                $("#profaffdata").toggle();
+            });
                $("#comm").click(function(){
-             	 console.log("clicked")
-	    		$("#commdata").toggle();
-	  		});
+                 console.log("clicked")
+                $("#commdata").toggle();
+            });
+
+
+
+         $('[data-toggle="tooltip"]').tooltip();      
+          $('[data-toggle="popover"]').popover();       
 
         });
 
-       
+
+        var position = $(window).scrollTop(); 
+
+        console.log('position'+position)
+
+// should start at 0
 
 </script>
+</head>
+<body >
+
+
 <div class="navbar-custom"  id="marg" >
 <div class="container" >
     <div class = 'row'>
         <div class="col-md-9 col-sm-12 col-xs-12 col-xs-12" style="margin-top: 30px;color: white;">
 
-            <h6 class="no-margin" style="font-size: 30px;text-transform: uppercase;"><b>Sharmila shankar </b></h6>
+            <h6 class="no-margin" style="font-size: 30px;text-transform: uppercase;"><b>Hi i'm Sharmila shankar </b></h6>
             <h6 class="no-margin" style="font-size: 20px;text-transform: uppercase;">Professor</h6>
             <br>
             <h6 class="no-margin" style="font-size: 15px;text-transform: uppercase;font-family: 'Pacifico', cursive;">"loves to make friends"</h6><br>
@@ -192,11 +207,12 @@
     </div>
 </div>
 
+
 <section class="wow fadeIn">
             <div class="container">
                 <div class="row margin-six-bottom xs-margin-30px-bottom">
                     <div class="col-md-8 col-sm-10 col-xs-12 center-col text-center">
-                        <div class="alt-font text-medium-gray margin-5px-bottom text-uppercase text-small">About Sharmila Shankar</div>
+                        <div class="alt-font text-medium-gray margin-5px-bottom text-uppercase text-small"><a href="#" data-toggle="tooltip" title="About" >About Sharmila Shankar</a></div>
                         <h6 class="font-weight-300 text-extra-dark-gray no-margin">Basically <strong class="font-weight-400"> Loves Teaching ,</strong>worked in  <strong class="font-weight-400">ANNA University</strong> Inspired many students . Joined <strong class="font-weight-400">BSAU in 1998</strong>.</h6>
                         <h6 class="font-weight-300 text-extra-dark-gray no-margin"><strong class="font-weight-400">shares thoughts ,feelings and helps everyone .</strong></h6>
                     </div>
@@ -206,8 +222,8 @@
                         <div class="feature-box">
                             <div class="content">
                                 <i class="icon-browser text-medium-gray icon-large margin-25px-bottom sm-margin-15px-bottom"></i>
-                                <div class="text-medium alt-font text-capitalize text-extra-dark-gray margin-10px-bottom sm-margin-5px-bottom">POST</div>
-                                <p class="width-85 margin-lr-auto sm-width-100">Joined BSAU in 1998 as Lecturer .<font style="visibility: hidden">Handled all level(UG , PG , Phd) of students .</font></p>
+                                <div class="text-medium alt-font text-capitalize text-extra-dark-gray margin-10px-bottom sm-margin-5px-bottom"><a href="#" data-toggle="tooltip" title="Post" data-placement="left">POST</a></div>
+                                <p class="width-85 margin-lr-auto sm-width-100"><center>Joined BSAU in 1998 as Lecturer .</center></p>
                             </div>
                         </div>
                     </div>
@@ -215,8 +231,8 @@
                         <div class="feature-box">
                             <div class="content">
                                 <i class="icon-book-open text-medium-gray icon-large margin-25px-bottom sm-margin-15px-bottom"></i>
-                                <div class="text-medium alt-font text-capitalize text-extra-dark-gray margin-10px-bottom sm-margin-5px-bottom">TARGET</div>
-                                <p class="width-85 margin-lr-auto sm-width-100">Motivating students for Innovation .<font style="visibility: hidden">Handled all level(UG , PG , Phd) of students .</font></p>
+                                <div class="text-medium alt-font text-capitalize text-extra-dark-gray margin-10px-bottom sm-margin-5px-bottom"><a href="#" data-toggle="tooltip" title="Target" data-placement="top">TARGET</a></div>
+                                <p class="width-85 margin-lr-auto sm-width-100"><center>Motivating students for Innovation .</center></p>
                             </div>
                         </div>
                     </div>
@@ -224,7 +240,7 @@
                         <div class="feature-box">
                             <div class="content">
                                 <i class="fas fa-chalkboard text-medium-gray icon-large margin-25px-bottom sm-margin-15px-bottom"></i>
-                                <div class="text-medium alt-font text-capitalize text-extra-dark-gray margin-10px-bottom sm-margin-5px-bottom">TEACHING</div>
+                                <div class="text-medium alt-font text-capitalize text-extra-dark-gray margin-10px-bottom sm-margin-5px-bottom"><a href="#" data-toggle="tooltip" title="Teaching" data-placement="right">TEACHING</a></div>
                                 <p class="width-85 margin-lr-auto sm-width-100">Have been teaching for past 25 years . Handled all level(UG , PG , PhD) of students .</p>
                             </div>
                         </div>
@@ -248,7 +264,7 @@
                         <div class="col-md-3 col-sm-6 col-xs-12 sm-margin-four-bottom xs-margin-eight-bottom wow fadeInUp">
                             <div class="bg-white box-shadow-light text-center padding-twelve-all position-relative xs-padding-five-all">
                                 <i class="icon-tools icon-extra-medium text-deep-pink margin-25px-bottom margin-25px-top sm-margin-15px-bottom"></i>
-                                <div class="alt-font text-extra-dark-gray margin-10px-bottom sm-margin-5px-bottom font-weight-600">Education</div>
+                                <div class="alt-font text-extra-dark-gray margin-10px-bottom sm-margin-5px-bottom font-weight-600"><a href="#" data-toggle="tooltip" title="Education" data-placement="left">Education</a></div>
                                 <p>Ph.D(CSE) - Anna-univ(2012)<br>ME(CSE) - Madras-Univ(2002)<br>
                                 	MS - (software systems) , BITS(1997).	
                                 	<br>B.E.(CSE) - Bharathiyar-Univ(1993).
@@ -258,7 +274,7 @@
                         <div class="col-md-3 col-sm-6 col-xs-12 sm-margin-four-bottom xs-margin-eight-bottom wow fadeInUp" data-wow-delay="0.2s">
                             <div class="bg-white box-shadow-light text-center padding-twelve-all position-relative xs-padding-five-all">
                                 <i class="icon-tools icon-extra-medium text-deep-pink margin-25px-bottom margin-25px-top sm-margin-15px-bottom"></i>
-                                <div class="alt-font text-extra-dark-gray margin-10px-bottom sm-margin-5px-bottom font-weight-600">Career</div>
+                                <div class="alt-font text-extra-dark-gray margin-10px-bottom sm-margin-5px-bottom font-weight-600"><a href="#" data-toggle="tooltip" title="Career" data-placement="top">Career</a></div>
                                 <p>Had been in various levels . Deputy Director <br> Head of department, 
                                 	<br> Proffessor <br>Associate proffessor  <br> Senior lecturer, Lecturer  <br>Head of department .</p>
                             </div>
@@ -266,14 +282,14 @@
                         <div class="col-md-3 col-sm-6 col-xs-12 xs-margin-eight-bottom wow fadeInUp" data-wow-delay="0.4s">
                             <div class="bg-white box-shadow-light text-center padding-twelve-all position-relative xs-padding-five-all">
                                 <i class="icon-target icon-extra-medium text-deep-pink margin-25px-bottom margin-25px-top sm-margin-15px-bottom"></i>
-                                <div class="alt-font text-extra-dark-gray margin-10px-bottom sm-margin-5px-bottom font-weight-600">Goals</div>
+                                <div class="alt-font text-extra-dark-gray margin-10px-bottom sm-margin-5px-bottom font-weight-600"><a href="#" data-toggle="tooltip" title="Goals" data-placement="top">Goals</a></div>
                                 <p>Motivates students <br> Kindle the students talent for Innovation .</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.6s">
                             <div class="bg-white box-shadow-light text-center padding-twelve-all position-relative xs-padding-five-all">
                                 <i class="fab fa-font-awesome icon-extra-medium text-deep-pink margin-25px-bottom margin-25px-top sm-margin-15px-bottom"></i>
-                                <div class="alt-font text-extra-dark-gray margin-10px-bottom sm-margin-5px-bottom font-weight-600">Achievements</div>
+                                <div class="alt-font text-extra-dark-gray margin-10px-bottom sm-margin-5px-bottom font-weight-600"><a href="#" data-toggle="tooltip" title="Achievements" data-placement="right">Achievements</a></div>
                                 <p>Best teacher award (2017) given by Alumini association of crescent .</p>
                                 <p>Received a fund of Rs. 35,000/- for the conduct of National Seminar on
 								MANETs, 2010.</p>
